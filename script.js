@@ -6,10 +6,15 @@ function updateOutput(){
 			resolve("Hello, world!");
 		},1000);
 	});
+
+//Update the text of the HTML element with ID "output" when the promise resolve
+	promise.then((result)=>{
+		document.getElementByID("output").textContent=
+			result;
+	});
+
+
 }
-Hello().then(data=>{
-	document.getElementById("output").textContent=data;
-});
 
 	
 })
