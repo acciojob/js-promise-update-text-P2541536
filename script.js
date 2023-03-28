@@ -1,6 +1,7 @@
 //your JS code here. If required.
-function Hello(){
-	return new Promise((resolve,reject)=>{
+function updateOutput(){
+	"Hello,world!" after 1 second
+	const promise = new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 			resolve("Hello, world!");
 		},1000);
